@@ -1,0 +1,8 @@
+<header>
+	<nav>
+		<% var links = public.html.partials._data.header.links; %>
+		<% for (var link in links) { %>
+			<a href="<%= links[link].url %>"><%= links[link].name %></a>
+		<% } %>
+	</nav>
+</header>
